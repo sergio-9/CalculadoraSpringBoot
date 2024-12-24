@@ -2,7 +2,7 @@ package com.calculadora.calculadora;
 
 public class OperacionesBasicas {
     public  float suma(float a, float b){
-		float c = 1 + 1;
+		float c = a + b;
 		return c;
 	}
 
