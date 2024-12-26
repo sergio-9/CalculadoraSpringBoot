@@ -1,0 +1,20 @@
+.botones{
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    font-size: 50px;
+    width: 185px;
+    height: 320px;
+    border-radius: 20px;
+}
+.btn{
+    font-size: 30px;
+    width: 35px;
+    left: 40px;
+    cursor: pointer;
+}
+.display{
+    background-color: white;
+    font-size: 30px;
+    width: 170px;
+}

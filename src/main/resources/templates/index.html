@@ -2,18 +2,38 @@
 <html lang="es">
 <head>
     <title>Calculadora</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <main>
         <h1>Seleccione el calculo a realizar</h1>
     </main>
     <a href="https://github.com/sergio-9" target="_blank" rel="noopener noopener">github</a>
-    <p>Selecciona los numeros de la operacion que quieres</p>
-    <form action="http://127.0.0.1:8080/calculadora/1/suma/2">
-        <input type="number" placeholder="numero">
-        <input type="number" placeholder="numero">
-        <button type="submit">suma</button>
-    </form>
+        <p>Selecciona los numeros de la operacion que quieres</p>
+        <br>
+    <div class="botones">
+        <input class="display" type="text" disabled>
+        <br>
+        <button class="btn" type="button">8</button>
+        <button class="btn" type="button">6</button>
+        <button class="btn" type="button">9</button>
+        <button class="btn" type="button">x</button>
+        <br>
+        <button class="btn" type="button">4</button>
+        <button class="btn" type="button">5</button>
+        <button class="btn" type="button">6</button>
+        <button class="btn" type="button">/</button>
+        <br>
+        <button class="btn" type="button">1</button>
+        <button class="btn" type="button">2</button>
+        <button class="btn" type="button">3</button>
+        <button class="btn" type="button">-</button>
+        <br>
+        <button class="btn" type="button">.</button>
+        <button class="btn" type="button">0</button>
+        <button class="btn" type="button">+</button>
+        <button class="btn" type="button">=</button>
+    </div>
 
 </body>
 </html>
