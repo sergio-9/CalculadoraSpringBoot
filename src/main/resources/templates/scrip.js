@@ -1,18 +1,16 @@
-function appendToDisplay(value) {
-    const display = document.getElementById('display');
-    display.value += value;
-}
+const botones = document.querySelectorAll('.btn');
+const display = document.querySelector('.display');
 
-function clearDisplay() {
-    const display = document.getElementById('display');
-    display.value = '';
-}
-
-function calculate() {
-    const display = document.getElementById('display');
-    try {
-        display.value = eval(display.value);
-    } catch (error) {
-        display.value = 'Error';
-    }
-}
+botones.forEach(boton => {
+    boton.addEventListener('click', () => {
+        let calculo = "";
+        const valor = boton.textContent;
+        if (valor === "="){
+            calculo = display.value
+            alert(calculo)
+            display.value = ""
+        }else{
+            display.value += valor;
+        }
+    });
+});
