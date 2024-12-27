@@ -7,7 +7,18 @@ botones.forEach(boton => {
         const valor = boton.textContent;
         if (valor === "="){
             calculo = display.value
-            alert(calculo)
+            const calculoObject = {
+                operation:calculo
+            };
+            const jsonString = JSON.stringify(calculoObject);
+            fetch("http://127.0.0.1:8080/calculadora" , {
+                method: 'POST',
+                headers: {
+                    'Content-type':'application/json'
+                },
+                body: jsonString
+            })
+            .then(response => response.json())
             display.value = ""
         }else{
             display.value += valor;
